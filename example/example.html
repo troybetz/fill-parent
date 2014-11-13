@@ -1,0 +1,76 @@
+
+<html>
+  <head>
+    <title>fill parent example</title>
+    <style>
+      body {
+        text-align: center;
+        margin-bottom: 4em;
+      }
+
+      h1 {
+        padding: 1em;
+        font-family: Sans-Serif;
+      }
+
+      .container {
+        margin: 0 auto;
+        border: 3px solid #222;
+        height: 700px;
+        width: 1000px;
+      }
+      
+      .box {
+        display: inline-block;
+        position: relative;;
+        margin: 1em;
+        transition: all 300ms;
+      }
+
+      .box.is-selected {
+        z-index: 100;
+      }
+
+      .one {
+        background: #2ecc71;
+        width: 350px;
+        height: 150px;
+      }
+
+      .two {
+        background: #2980b9;
+        width: 100px;
+        height: 200px;
+      }
+
+      .three {
+        background: #e67e22;
+        width: 300px;
+        height: 310px;
+      }
+
+      .four {
+        background: #c0392b;
+        width: 100px;
+        height: 400px;
+      }
+
+      .five {
+        background: #2c3e50;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>click a box</h1>
+    <div class="container">
+      <div class="box one"></div>
+      <div class="box two"></div>
+      <div class="box three"></div>
+      <div class="box four"></div>
+      <div class="box five"></div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
