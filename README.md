@@ -10,18 +10,17 @@ $ npm install module-boilerplate
 ```
 
 ## Usage
-Passing an element and its parent to `fillParent` will scale and center it.
-
-`calculateStyle` returns the values used in `fillParent` allowing you to scale it manually.
-
+Pass an element to `fillParent` to center and scale it.
 
 ```js
+/**
+ * Scales and centers`el` within `parent` while leaving 100px
+ * of padding on the left/right, and 200px on top/bottom;
+ */
+ 
 var fillParent = require('fill-parent');
-var calculateStyle = fillParent.calculateStyle;
 
-fillParent(el, parent, padding); // scales el
-
-calculateStyle(el, parent, padding); // returns values object needed to scale el
+fillParent(el, parent, {x: 100, y: 200});
 ```
 
 # License
