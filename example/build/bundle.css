@@ -1,0 +1,253 @@
+/**
+ * base styles
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+  font-family: Arial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #3498db;
+  outline: none;
+  text-decoration: underline;
+}
+
+header {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+header h1 {
+  margin: 2.2em 0.5em 0.9em 0.5em;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+header p {
+  letter-spacing: 1px;
+}
+
+footer {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  text-align: center;
+}
+
+.github-button {
+  margin: 6em 0;
+  width: 75px;
+  height: 30px;
+}
+
+/**
+ * actual content
+ */
+
+.content {
+  -webkit-flex-basis: 60%;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.parentElement {
+  -webkit-flex-basis: 60%;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+  border: 3px solid #222;
+  margin: 2em 0;
+  padding: 4em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.childElement {
+  display: inline-block;
+  margin: 1em;
+  -webkit-transition: all 300ms;
+          transition: all 300ms;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.childElement:hover {
+  cursor: pointer;
+}
+
+/**
+ * long square
+ */
+
+.childElement--purple {
+  background: #9b59b6;
+  width: 350px;
+  height: 150px;
+}
+
+/**
+ * circle
+ */
+
+.childElement--blue {
+  background: #3498db;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+/**
+ * tall square
+ */
+
+.childElement--green {
+  background: #2ecc71;
+  width: 100px;
+  height: 200px;
+}
+
+/**
+ * pacman
+ */
+
+.childElement--yellow {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #f1c40f;
+  border-left: 60px solid #f1c40f;
+  border-bottom: 60px solid #f1c40f;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/**
+ * arrow
+ */
+
+.childElement--orange {
+  width: 0; 
+  height: 0; 
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #e67e22;
+}
+
+/**
+ * square square
+ */
+
+.childElement--red {
+  background: #e74c3c;
+  width: 300px;
+  height: 310px;
+}
+
+/**
+ * responsive things
+ */
+
+@media(max-width: 1000px) {
+  .content {
+    -webkit-flex-basis: 80%;
+        -ms-flex-preferred-size: 80%;
+            flex-basis: 80%;
+  }
+
+  .parentElement {
+    -webkit-flex-basis: 70%;
+        -ms-flex-preferred-size: 70%;
+            flex-basis: 70%;
+  }
+}
+
+@media(max-width: 700px) {
+  .content {
+    -webkit-flex-basis: 90%;
+        -ms-flex-preferred-size: 90%;
+            flex-basis: 90%;
+  }
+
+  .parentElement {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+
+  .childElement--red {
+    width: 200px;
+    height: 210px;
+  }
+}
+
+
+@media(max-width: 400px) {
+  .childElement--red {
+    width: 100px;
+    height: 110px;
+  }
+
+  .childElement--blue {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+}

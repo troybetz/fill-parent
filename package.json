@@ -1,0 +1,30 @@
+{
+  "name": "fill-parent",
+  "version": "2.0.0",
+  "description": "center and scale an element to fill its parent",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:compedit/fill-parent.git"
+  },
+  "keywords": [
+    "fill",
+    "scale",
+    "element",
+    "parent"
+  ],
+  "author": "troy betz <troybetz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/compedit/fill-parent/issues"
+  },
+  "homepage": "https://github.com/compedit/fill-parent",
+  "dependencies": {
+    "get-element-center": "^1.0.2",
+    "prefixed": "^0.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^4.0.0",
+    "browserify": "^6.3.3"
+  }
+}
