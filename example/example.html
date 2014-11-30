@@ -1,76 +1,34 @@
-
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>fill parent example</title>
-    <style>
-      body {
-        text-align: center;
-        margin-bottom: 4em;
-      }
-
-      h1 {
-        padding: 1em;
-        font-family: Sans-Serif;
-      }
-
-      .container {
-        margin: 0 auto;
-        border: 3px solid #222;
-        height: 700px;
-        width: 1000px;
-      }
-      
-      .box {
-        display: inline-block;
-        position: relative;;
-        margin: 1em;
-        transition: all 300ms;
-      }
-
-      .box.is-selected {
-        z-index: 100;
-      }
-
-      .one {
-        background: #2ecc71;
-        width: 350px;
-        height: 150px;
-      }
-
-      .two {
-        background: #2980b9;
-        width: 100px;
-        height: 200px;
-      }
-
-      .three {
-        background: #e67e22;
-        width: 300px;
-        height: 310px;
-      }
-
-      .four {
-        background: #c0392b;
-        width: 100px;
-        height: 400px;
-      }
-
-      .five {
-        background: #2c3e50;
-        width: 200px;
-        height: 200px;
-      }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fill parent</title>
+    <meta name="description" content="center and scale an element to fill its parent">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="build/bundle.css">
   </head>
   <body>
-    <h1>click a box</h1>
-    <div class="container">
-      <div class="box one"></div>
-      <div class="box two"></div>
-      <div class="box three"></div>
-      <div class="box four"></div>
-      <div class="box five"></div>
-    </div>
-    <script src="bundle.js"></script>
+    <header>
+      <h1>
+        <a href="http://github.com/compedit/fill-parent">fill parent</a>
+      </h1>
+    </header>
+    
+    <section class="content">
+      <div class="container">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box four"></div>
+        <div class="box five"></div>
+      </div>
+    </section>
+
+    <footer>
+      <iframe class="github-button" src="http://ghbtns.com/github-btn.html?user=compedit&repo=fill-parent&type=watch&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+    </footer>
+    <script src="build/bundle.js"></script>
   </body>
 </html>

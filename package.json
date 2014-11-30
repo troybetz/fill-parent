@@ -24,9 +24,7 @@
     "prefixed": "^0.1.0"
   },
   "devDependencies": {
-    "watchify": "^2.1.1"
-  },
-  "scripts": {
-    "example": "watchify example/example.js -o example/bundle.js"
+    "autoprefixer": "^4.0.0",
+    "browserify": "^6.3.3"
   }
 }
