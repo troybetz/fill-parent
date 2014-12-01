@@ -1,6 +1,6 @@
 {
   "name": "fill-parent",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "center and scale an element to fill its parent",
   "main": "index.js",
   "repository": {
