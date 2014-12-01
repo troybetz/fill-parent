@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/compedit/fill-parent",
   "dependencies": {
+    "fastclick": "^1.0.3",
     "get-element-center": "^1.0.2",
     "prefixed": "^0.1.0"
   },
