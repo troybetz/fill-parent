@@ -1,6 +1,6 @@
 {
   "name": "fill-parent",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "center and scale an element to fill its parent",
   "main": "index.js",
   "repository": {
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/compedit/fill-parent",
   "dependencies": {
-    "get-element-center": "^1.0.2",
+    "fastclick": "^1.0.3",
+    "get-element-center": "^1.1.0",
     "prefixed": "^0.1.0"
   },
   "devDependencies": {

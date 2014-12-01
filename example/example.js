@@ -3,6 +3,7 @@
  */
 
 var fillParent = require('../');
+var fastclick = require('fastclick');
 var container = document.querySelector('.content');
 
 container.addEventListener('click', function(event) {
@@ -20,3 +21,9 @@ container.addEventListener('click', function(event) {
 
   el.classList.toggle('is-selected');
 });
+
+/**
+ * attach fastclick
+ */
+ 
+fastclick(document.body);
