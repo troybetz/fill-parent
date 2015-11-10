@@ -6,7 +6,7 @@ Center and scale an element to fill its parent
 ## Installation
 
 ```
-$ npm install module-boilerplate
+$ npm install fill-parent
 ```
 
 ## Usage
